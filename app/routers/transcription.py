@@ -69,7 +69,7 @@ async def transcribe_internal(ext_ref_no, title, url, language):
         
         print("TASK-1: PyAnnote Implementation")
         #old Tokens(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)
-        pipeline = Pipeline.from_pretrained('pyannote/speaker-diarization', use_auth_token="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")
+        pipeline = Pipeline.from_pretrained('pyannote/speaker-diarization', use_auth_token="YOUR_HUGGINGFACE_TOKEN")
         print(pipeline)
         # create the input dictionary with the url
         input_dict = {'uri': "URL implementation", 'audio': url}
