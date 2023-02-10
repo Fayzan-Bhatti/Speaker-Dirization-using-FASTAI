@@ -14,7 +14,7 @@ load_dotenv()
 openai.api_key = os.getenv("GPT3_API_KEY")
 use_auth_token = os.getenv("PYANOTATE_AUTH_TOKEN")
 
-app = FastAPI( title="SuperKool", version="0.0.1" )
+app = FastAPI( title="AI Tool", version="0.0.1" )
 app.include_router(transcription.router)
 app.include_router(translation.router)
 app.include_router(takeaways.router)
